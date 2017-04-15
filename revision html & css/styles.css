@@ -1,0 +1,37 @@
+/**
+ |
+ | Fixation du corps de la page.
+ | ---------------------------------------------------------------------------
+ | 62.5% permettra de fixer la taille de la police à 10px soit 1em
+ | Ainsi je pourrais utlisier l'unité de mesure REM
+ |
+ **/
+html {
+    font-size: 62.5%;
+}
+
+/**
+ |
+ | Plusieurs changement :
+ | ---------------------------------------------------------------------------
+ | - Choix de la police d'écriture
+ | - Le style d'écriture
+ | - Je fixe la taille de la police d'écriture avec l'unité de mesure rem
+ | - Enfin je fixe la couleur.
+ |
+ **/
+* {
+    font-family: "Comic Sans Ms";
+    font-style: italic;
+    font-size: 1.8rem; /* Équivalent à 18px */
+    color: slateblue;
+}
+
+/**
+ |
+ | Image
+ | ---------------------------------------------------------------------------
+ | - Modification de la taille de l'image
+ |
+ **/
+img { width: 30%; }
