@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cours sur les formulaires</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Les formulaires</h1>
+        <p>Chaque formulaire commence par une balise <strong>form</strong> avec comme <strong>attribut : </strong></p>
+        <ul>
+            <li><strong>name</strong> qui correspond au nom du formulaire</li>
+            <li><strong>action</strong> qui stipule la page qu'on aura une fois la soumision faîtes.</li>
+            <li><strong>method</strong> qui permet de définir si on souhaite un envoi via l'url ou autrement.</li>
+        </ul>
+        <pre>
+        &lt;form name="form1" action="index.html" method="post"&gt;
+            ... le formulaire ici ...
+        &lt;/form&gt;
+        </pre>
+        <p>A savoir que si par défaut on ne stipule pas d'action alors on chargera la même page. <br />
+        Également si on ne stipule pas de méthode, alors par défaut nous aurons la méthode GET qui sera sélectionner. <br />
+        Par mesure de sécurité on utilise pratiquement tout le temps la méthode POST</p>
+        <h2>Fieldset et sa légende pour donner du style à nos formulaires.</h2>
+        <pre>
+        &lt;fieldset&gt;
+            ... Un partie du formulaire ...
+        &lt;/fieldset&gt;
+        </pre>
+        Exemple :
+        <form name="form2" action="" method="POST">
+            <fieldset>
+                <legend>Qui êtes-vous ?</legend>
+                <label for="firstname">Prénom : </label><input type="text" name="firstname" placeholder="Votre prénom ici" id="firstname">
+                <label for="lastname">Nom : </label><input type="text" name="lastname" placeholder="Votre nom ici..." id="lastname">
+            </fieldset>
+
+            <fieldset>
+                <legend>Vos 2 pseudos préféré</legend>
+                <label for="pseudo1">Pseudo1 : </label><input type="text" name="pseudo1" placeholder="Votre premier pseudo ici..." id="pseudo1">
+                <label for="pseudo2²">Pseudo2 : </label><input type="text" name="pseudo2" placeholder="Votre second pseudo ici..." id="pseudo2">
+            </fieldset>
+        </form>
+        <h2>Plusieurs type sont possible :</h2>
+        <ul>
+            <li><strong>text</strong> permet d'inscrir du texte</li>
+            <li><strong>button</strong> permet de concevoir un bouton</li>
+            <li><strong>image</strong> permet d'ajouter une image avec l'attribut src</li>
+            <li><strong>password</strong> pour les mots de passe</li>
+            <li><strong>checkbox</strong> Permet de sélectionner des cases</li>
+            <li><strong>radio</strong> Permet de choisir 1 résultat sur une certaine liste</li>
+            <li><strong>hidden</strong> Permet de définir un champ caché</li>
+            <li><strong>submit</strong> Permet d'envoyer le formulaire</li>
+            <li><strong>reset</strong> Permet d'annuler le formulaire</li>
+            <li><strong>email</strong> Pour les email</li>
+            <li><strong>url</strong> Pour les adresse web</li>
+            <li><strong>file </strong> Pour charger un fichier local</li>
+            <li><strong>textarea</strong> Permet de créer un champ multilignes</li>
+            <li><strong>select</strong> Permet de gérer une liste déroulante. Accompagné des options avec sa propre value</li>
+        </ul>
+    </body>
+</html>
